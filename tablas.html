@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML avanzado </title>
+</head>
+<body>
+    <h1>HTML avanzado</h1>
+    <h2>Tablas</h2> <!--Las tablas son un conjunto estructurado de datos compuesto por filas y columnas-->
+    <caption>Mi primera tabla</caption> <!--Esta etiqueta representa un título descriptivo en una tabla, esta tabla "hablara sobre esto, decripción"-->
+    <table border="2"><!--Con esta etiqueta creamos una tabla; dentro de esa etiqueta podemos indicar algunas otras propiedades, como el borde-->
+        <tr><!--Esta etiqueta crea una fila-->
+            <th>Nombre</th><!--Esta etiqueta representa un encabezado de tabla-->
+            <th>Apellido</th>
+        </tr>
+        <tr>
+            <td>Mariela</td><!--Representa celdas de datos-->
+            <td>González</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <hr>
+    <h3>Tabla expandida</h3>
+    <table border="1">
+        <tr>
+            <td>Item 1</td>
+            <td rowspan="3">Item 2</td> <!--Rowspan es un atributo que le dice cuantas celdas abarcar verticalmente-->
+            <td>Item 3</td>
+        </tr>
+        <tr>
+            <td>Item 4</td>
+            <td>Item 5</td>
+        </tr>
+        <tr>
+            <td>Item 6</td>
+            <td>Item 7</td>
+        </tr>
+    </table>
+            <br>
+            <br>
+
+            <table border="2">
+            <tr>
+                <td rowspan="2">Item 1</td>
+                <td>Item 2</td>
+                <td>Item 3</td>
+            </tr>
+            <tr>
+                <td>item 4</td>
+                <td>item 5</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <hr>
+        <h3>Columna extendida</h3>
+        <table border="1">
+            <tr>
+                <td>Item 1</td>
+                <td colspan="3">Item 2</td> <!--Colspan es atributo que dice cuantas celdas abarcar horizontalmente-->
+            </tr>
+            <tr>
+                <td>Item 3</td>
+                <td>Item 4</td>
+                <td>Item 5</td>
+                <td>Item 6</td>
+            </tr>
+     </table>
+<br>
+<hr>
+<br>
+<h2>Tablas con datos de mascotas</h2>
+<caption>Tabla con las mascotas de la CH40</caption>
+<br>
+<br>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Nombre</th> <!--'th' Nombres de la celda de hasta arriba que indicará categoria-->
+            <th>Edad</th>
+            <th>Raza</th>
+            <th>Color</th>
+            <th>Género</th>
+            <th>Apodo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mina</td> <!--'td' dirá los contenidos de cada categoria marcada previamente con 'th'-->
+            <td>2 años</td>
+            <td>Tigris</td>
+            <td>Gris</td>
+            <td>Hembra</td>
+            <td>Mina Karina</td>
+        </tr>
+        <tr>
+            <td>Sarita</td>
+            <td>6 años</td>
+            <td>Abisinia</td>
+            <td>Tricolor</td>
+            <td>Hembra</td>
+            <td>Charita o Cuyo Vaquita</td>
+        </tr>
+        <tr>
+            <td>Paco</td>
+            <td>4 años</td>
+            <td>Pug</td>
+            <td>Cervato</td>
+            <td>Macho</td>
+            <td>Paquito</td>
+       </tr>
+        <tr>
+           <td>Señora Bigotes</td>
+           <td>7 Meses</td>
+           <td>Ordinario</td>
+           <td>Blanca con gris</td>
+           <td>Hembra</td>
+           <td>Bigotitos</td>
+        </tr>
+        <tr>
+            <td>Griselo</td>
+            <td>3 años</td>
+            <td>Mestizo</td>
+            <td>Gris</td>
+            <td>No le hemos preguntado</td>
+            <td>Grisela</td>
+        </tr>
+    </tbody>
+    <tfoot><!--Un pie de la tabla-->
+        <tr>
+            <td colspan="6">Bellas mascotas</td> 
+        </tr>
+    </tfoot> <br>
+</table>
+<br>
+<hr>
+
+<h2>Tabla de lugares que queremos visitar</h2>
+    <table border="3">
+        <thead>
+            <tr>
+                <th>Nombre del lugar</th>
+                <th>País</th>
+                <th>Mes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>París</td>
+                <td>Francia</td>
+                <td>Diciembre</td>
+            </tr>
+            <tr>
+                <td>Barcelona</td>
+                <td>España</td>
+                <td>Octubre</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Pie de tabla</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

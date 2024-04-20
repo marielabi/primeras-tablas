@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de formulario</title>
+</head>
+<body>
+    <h1>Registrar una consulta</h1>
+
+    <!--Pasos para crear un formulario
+  
+    1. Crear elemento form
+    2. Agregar labels e inputs para la info que quiera recolectar
+      
+    El formulario para esta sesión será para un consultorio dental, y requeriremos ciertos datos por parte del usuario:
+    
+    -Nombre completo
+    -Número de teléfono
+    -Correo electrónico
+    -Fecha de la cita
+    -La hora para la cita
+    -Método de pago - usaremos "radio" para elegir solo una opción
+    -Guardar info del método de pago (si/no) - usaremos "checkbox", pero esta me permite seleccionar más de una opción.
+    -Botón para enviar esa info
+        
+     -->
+
+    <form action="" method="">
+        <label for="nombre-input">Nombre completo:</label>
+        <input type="text" id="nombre-input">
+
+        <label for="telefono-input">Número telefónico:</label>
+        <input type="text" id="telefono-input">
+
+        <label for="edad-input">Edad:</label>
+        <input type="number" id="edad-input" min="0" max="100"> <!--para evitar ingresar edades negativas, se pone ese min="0"
+
+        También puse input type number para establecer que seran numeros los recibidos
+        
+        OJO: este tipo de datos mejor ponerlos con otra cosa que no sea html, para hacerlo más seguro todo.-->
+
+        <label for="email-input">Correo electrónico</label>
+        <input type="email" id="email-input"> <!--otorgar contexto en input type= sobre lo que vamos a recibir, para eso es, asi que  al usuario podrian aparecerle sus direcciones registradas en su compu.
+        Bien podría ponerle tambien "password" y saldria modo contraseña con puntitos -->
+
+        <label for="fecha-input">Fecha:</label>
+        <input type="date" id="fecha-input"> <!--poniendole "date" la info se recibe en formato fechas mm/dd/yyyy, pero tambien esta date time, y date time local para mas especificad-->
+
+        <label for="hora-input">Hora:</label>
+        <input type="time" id="hora-input">
+
+        <label for="tarjeta-input">Tarjeta debito/crédito:</label>
+        <input type="radio" id="tarjeta-input">
+
+        <label for="depósito-input">Depósito</labelfor>
+        <input type="radio" id="depósito-input">
+
+        <label for="transferencia-input">Transferencia</label>
+        <input type="radio" id="transferencia-input" name="pago">
+
+        <label for="">Guardar mis datos para una consulta futura<label>
+        <input type="checkbox" id="guardar-info-input">
+
+    
+        <button type="submit">Enviar</button>
+        
+        <!--Esto es para subir información. El input de tipo submit (<input type="submit">) ya viene con esa palabra. Podemos hacer que el botón diga "enviar" o algo que queramos. Para ello, susar BOTTON-->
+        
+    </form> <!--Todo lo de mi formulario debe estar dentro de esta etiqueta-->
+</body>
+
+</html>
